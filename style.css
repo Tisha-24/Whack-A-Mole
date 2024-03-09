@@ -44,7 +44,7 @@ body {
 }
 
 .container {
-  background-image: url(/grass.jpg);
+  background-image: url(/images/grass.jpg);
   background-size: cover;
   color: #fff;
   display: flex;
@@ -112,7 +112,7 @@ button {
   position: absolute;
   top: 8%;
   left: 35%;
-  background-image: url(images/3885461.png);
+  background-image: url(/images/3885461.png);
   background-size: 100% 100%;
   transform: translate(-20%, -20%);
   transition: transform 0.1s;
