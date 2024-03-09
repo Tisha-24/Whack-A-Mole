@@ -4,8 +4,8 @@ const scoreelem = document.querySelector(".score span");
 const startBtn = document.querySelector("#start");
 const gameOverMsg = document.querySelector(".game-over");
 
-const sound = new Audio("/smash.mp3");
-const bombSound = new Audio("/weh.mp3");
+const sound = new Audio("/audios/smash.mp3");
+const bombSound = new Audio("/audios/weh.mp3");
 
 let score = 0;
 let timer;
@@ -18,14 +18,14 @@ function run() {
     const img = document.createElement("img");
     img.classList.add("mole");
     const isMole = Math.random() < 0.8;
-    img.src = isMole ? "/molebigger.png" : "/bomb.png";
+    img.src = isMole ? "/images/molebigger.png" : "/images/bomb.png";
 
     img.addEventListener("click", () => {
       if (isMole) {
         score += 10;
         sound.play();
         scoreelem.textContent = score;
-        img.src = "/deadmolepng.png";
+        img.src = "/images/deadmolepng.png";
       } else {
         bombSound.play();
         gameOver();
